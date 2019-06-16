@@ -1,0 +1,40 @@
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/listAll
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
+GET http://localhost:8080/spring-oracle-mybatis/test
+
+###
+
+GET http://localhost:8080/test
+
+###
+
