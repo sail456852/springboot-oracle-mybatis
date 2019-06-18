@@ -9,10 +9,8 @@ import java.util.List;
 @Mapper
 public interface PeopleDAO{
 
-    void add();
-
-    void update();
-
     @Select("select * from people")
     List<People> listAll();
+
+    List<People> getPeopleByAge(int age);
 }

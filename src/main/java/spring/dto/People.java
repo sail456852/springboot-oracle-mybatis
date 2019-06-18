@@ -4,15 +4,9 @@ public class People {
 
     private String name;
     private String sex;
-    private int age;
+    private Integer age;
 
     People() {
-    }
-
-    public People(String name, String sex, int age) {
-        this.name = name;
-        this.sex = sex;
-        this.age = age;
     }
 
     public String getName() {
@@ -31,20 +25,11 @@ public class People {
         this.sex = sex;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "People{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", age='" + age + '\'' +
-                '}';
     }
 }

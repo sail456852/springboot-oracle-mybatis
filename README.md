@@ -37,5 +37,17 @@ spring.datasource.username=root
 spring.datasource.password=FakePassword
 ~~~
 
+#BUG list 
+1.xml if test bug
+~~~xml
+   <select id="getPeopleByAge" parameterType="java.lang.Integer" resultType="spring.dto.People">
+        SELECT * FROM people
+        <where>
+            <if test="age != null">
+                age = #{age}
+            </if>
+        </where>
+~~~
+> org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'age' in 'class java.lang.Integer'
 
-        
+## remove if test tag, works fine, tell me why?

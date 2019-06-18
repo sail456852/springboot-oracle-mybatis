@@ -16,10 +16,18 @@ public class PeopleController {
     @Autowired
     private PeopleDAO peopleDAO;
 
+
     @ResponseBody
     @RequestMapping("/list")
     public List<People> listAll() {
         List<People> list = peopleDAO.listAll();
+        return list;
+    }
+
+    @ResponseBody
+    @RequestMapping("/listByAge")
+    public List<People> listByAge(Integer age) {
+        List<People> list = peopleDAO.getPeopleByAge(age);
         return list;
     }
 
