@@ -1,5 +1,8 @@
 package spring.dto;
 
+/**
+ *  FOR MYSQL DEMO !
+ */
 public class People {
 
     private String name;
