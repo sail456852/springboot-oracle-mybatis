@@ -62,5 +62,17 @@ public class RedisRepoTest {
         studentRepository.findAll().forEach(students::add);
         students.forEach(System.err::println);
     }
+    
+    @Test
+    public void printBean() {
+        Student engStudent = new Student(
+                "Eng2015001", "John Doe", Student.Gender.MALE, 1);
+        Student medStudent = new Student(
+                "Med2015001", "Gareth Houston", Student.Gender.MALE, 2);
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(engStudent);
+        students.add(medStudent);
+        students.forEach(System.err::println);
+    }
 
 }
