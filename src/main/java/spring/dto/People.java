@@ -1,9 +1,11 @@
 package spring.dto;
 
+import java.io.Serializable;
+
 /**
  *  FOR MYSQL DEMO !
  */
-public class People {
+public class People implements Serializable{
 
     private String name;
     private String sex;

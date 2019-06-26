@@ -1,6 +1,8 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spring.config.JavaConfig;
@@ -15,8 +17,7 @@ import java.util.List;
  * User: yz<br/>
  * Date: 6/18/2019<br/>
  * Time: 7:12 PM<br/>
- * To change this template use File | Settings | File Templates.
- */
+ * To change this template use File | Settings | File Templates. */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = JavaConfig.class)
 public class RedisRepoTest {
@@ -75,4 +76,18 @@ public class RedisRepoTest {
         students.forEach(System.err::println);
     }
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+    /**
+     *  Failed  won't work
+     */
+    @Test
+    public void redisTemplateSet() {
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        String yuzhenTest = "yuzhenTest";
+        valueOperations.set(yuzhenTest,"newValue");
+        Object o = valueOperations.get(yuzhenTest);
+        System.err.println("o = " + o);
+    }
 }
