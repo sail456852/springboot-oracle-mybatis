@@ -51,3 +51,6 @@ spring.datasource.password=FakePassword
 > org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'age' in 'class java.lang.Integer'
 
 ## remove if test tag, works fine, tell me why?
+
+## to server static content you need to have resources/public 
+classpath means resources fold path don't put public along with main folder

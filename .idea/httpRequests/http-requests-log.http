@@ -1,3 +1,27 @@
+POST http://localhost:8080/addUrl
+Content-Type: application/json
+
+{
+  "url": "testUrlFromIdea",
+  "comments": "helloComment"
+}
+
+###
+
+POST http://localhost:8080/addUrl
+Content-Type: application/json
+
+{
+  "url": "testUrlFromIdea",
+  "comments": "helloComment"
+}
+
+###
+
+GET http://localhost:8080/list
+
+###
+
 GET http://localhost:8080/test
 
 ###

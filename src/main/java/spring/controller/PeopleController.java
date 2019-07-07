@@ -16,7 +16,10 @@ public class PeopleController {
     @Autowired
     private PeopleDAO peopleDAO;
 
-
+    /**
+     * http://localhost:8080/list
+     * @return
+     */
     @ResponseBody
     @RequestMapping("/list")
     public List<People> listAll() {

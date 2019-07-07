@@ -10,3 +10,22 @@ GET http://localhost:8080/test
 
 GET http://localhost:8080/list
 
+
+
+###
+POST http://localhost:8080/addUrl
+Content-Type: application/json
+
+{
+  "url": "testUrlFromIdea",
+  "comments": "helloComment"
+}
+
+###
+
+POST http://localhost:80/api/item
+Content-Type: application/x-www-form-urlencoded
+
+id=99&content=new-element
+
+###

@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="UTF-8" content="text/html"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function () {
+            // bind 'myForm' and provide a simple callback function
+            // $('#myForm').ajaxForm(function () {
+            //     console.log("add Urls called");
+            // });
+            $('#addUrl').click(function () {
+                console.log("clean up called ");
+                $("#showUrl").empty();
+                $.ajax({
+                    type: "POST",
+                    url: "/addUrl",
+                    data: {
+                        url: $("#inputUrl").val(), // < note use of 'this' here
+                    },
+                    success: function (result) {
+                        console.log("success");
+                        $("#showUrl").empty();
+                        $("#showUrl").append("<div>addUrl " + result.message +  "</div>");
+                    },
+                    error: function (result) {
+                        console.log("error");
+                        $("#showUrl").append("<div>addUrl " + result.message +  "</div>");
+                    }
+                })
+            });
+            $('#removeAll').click(function () {
+                console.log("clean up called ");
+                $("#showUrl").empty();
+                $.ajax({
+                    type: "POST",
+                    url: "/removeAll",
+                    success: function (result) {
+                        console.log("success");
+                        $("#showUrl").empty();
+                        $("#showUrl").append("<div>防止误删,这个功能没有开放,请一个一个删除</div>");a
+                    },
+                    error: function (result) {
+                        console.log("error");
+                        $("#showUrl").append("<div>removeAll 查询服务器数据错误</div>");
+                    }
+                })
+            });
+            $("#getAll").click(function (e) {
+                e.preventDefault();
+                $("#showUrl").empty();
+                $.ajax({
+                    type: "POST",
+                    url: "/getAll",
+                    data: {
+                        url: $("inputUrl").val(), // < note use of 'this' here
+                        access_token: $("#access_token").val()
+                    },
+                    success: function (result) {
+                        console.log("success");
+                        console.log(result);
+                        var list = result.queryResult.list;
+                        $("#showUrl").empty();
+                        $.each(list, function(i, val){
+                            $("#showUrl").append("<a target='_blank' href='" + val + "'>" + val + "</a> <br> " );
+                                // + "<span>" + val + "</span>" + "<button id='setInput' onclick=''>点击复制这个URL到输入框</button>" +  "<br>");
+                        });
+                    },
+                    error: function (result) {
+                        console.log("error");
+                        $("#showUrl").append("<div>getAll 查询服务器数据错误</div>");
+                    }
+                });
+            });
+            $("#removeUrl").click(function (e) {
+                e.preventDefault();
+                $("#showUrl").empty();
+                $.ajax({
+                    type: "POST",
+                    url: "/removeUrl",
+                    data: {
+                        url: $("#inputUrl").val(), // < note use of 'this' here
+                    },
+                    success: function (result) {
+                        console.log("success");
+                        $("#showUrl").empty();
+                        $("#showUrl").append("<div> " + $("#inputUrl").val() + result.message + " removed </div>");
+                    },
+                    error: function (result) {
+                        console.log("error");
+                        $("#showUrl").append("<div>removeUrl " + result.message +  "</div>");
+                    }
+                });
+            });
+            $("#showUrl").append("<div>显示</div>");
+            $("#showUrl").append("<div style='float: top'>所有在顶的URL</div>");
+        });
+    </script>
+    <style>
+        h1 {
+            color: aquamarine;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            color: red;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            color: yellowgreen;
+        }
+
+        span {
+            color: red;
+        }
+
+        button {
+            alignment: center;
+            text-align: center;
+            color: green;
+        }
+        #showUrl {
+            border: dot-dash black;
+            width: 70%;
+            height: 200px;
+            padding-left: 30%;
+            float: bottom;
+        }
+        #removeAll{
+            width: 10%;
+            float:bottom;
+            color: red;
+        }
+        #getAll{
+            color: green;
+        }
+        #addUrl{
+            color: blue;
+        }
+        #removeUrl{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>豆瓣在綫頂貼機</h1>
+
+<p>這裏填入要自動回帖的URL：例如: https://www.douban.com/group/topic/139684330/</p>
+<!--<form id="myForm" action="/addUrl" method="post">-->
+<!--    <span>在以下输入框,填入一个豆瓣帖子的URL:</span>-->
+<!--    <input id="submitButton" type="submit" value="提交"/>-->
+<!--</form>-->
+
+<input id="inputUrl" type="text" name="url" value="change me"/>
+
+<div>
+    <button id="getAll" name="getAll">查询在顶贴的所有帖子</button>
+    <button id="addUrl" name="addUrl">提交要顶贴的URL</button>
+    <button id="removeUrl" name="removeUrl">停止顶指定的URL</button>
+    <button id="removeAll" name="removeAll">删除所有在顶贴的帖子</button>
+</div>
+
+
+<div id="showUrl" draggable="true"></div>
+
+</body>

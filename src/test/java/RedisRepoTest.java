@@ -6,18 +6,25 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spring.config.JavaConfig;
+import spring.dao.CommentRedisRepository;
 import spring.dao.StudentRedisRepository;
+import spring.dto.Comment;
 import spring.dto.Student;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by IntelliJ IDEA.<br/>
  * User: yz<br/>
  * Date: 6/18/2019<br/>
  * Time: 7:12 PM<br/>
- * To change this template use File | Settings | File Templates. */
+ * To change this template use File | Settings | File Templates.
+ * http://localhost:8080/index.html
+ * http://localhost:8080/index2.html
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = JavaConfig.class)
 public class RedisRepoTest {
@@ -25,11 +32,27 @@ public class RedisRepoTest {
     @Autowired
     private StudentRedisRepository studentRepository;
 
+    @Autowired
+    private CommentRedisRepository commentRedisRepository;
+
     @Test
     public void save() {
-        Student student = new Student(
-                "Eng2015001", "John Doe", Student.Gender.MALE, 1);
-        studentRepository.save(student);
+//        Student student = new Student(
+//                "Eng2015001", "John Doe", Student.Gender.MALE, 1);
+//        studentRepository.save(student);
+        Comment comment = new Comment("testUrl", new ArrayList<String>(){{
+            add("testComment1");
+            add("testComment2");
+        }});
+
+        Comment comment2 = new Comment("testUrl2", new ArrayList<String>(){{
+            add("testComment3");
+            add("testComment4");
+        }});
+        Stream<Comment> stream = Stream.of(comment, comment2);
+        List<Comment> list = stream.collect(Collectors.toList());
+        commentRedisRepository.saveAll(list);
+        studentRepository.findAll().forEach(System.out::println);
     }
 
 
@@ -56,14 +79,14 @@ public class RedisRepoTest {
 //        studentRepository.deleteById(student.getId())
 
     }
-    
+
     @Test
     public void getAll() {
         List<Student> students = new ArrayList<>();
         studentRepository.findAll().forEach(students::add);
         students.forEach(System.err::println);
     }
-    
+
     @Test
     public void printBean() {
         Student engStudent = new Student(
@@ -80,14 +103,15 @@ public class RedisRepoTest {
     private RedisTemplate redisTemplate;
 
     /**
-     *  Failed  won't work
+     * Failed  won't work
      */
     @Test
     public void redisTemplateSet() {
-        ValueOperations valueOperations = redisTemplate.opsForValue();
+
         String yuzhenTest = "yuzhenTest";
-        valueOperations.set(yuzhenTest,"newValue");
-        Object o = valueOperations.get(yuzhenTest);
+        redisTemplate.opsForValue().set(yuzhenTest, "newValue");
+        Object o = redisTemplate.opsForValue().get(yuzhenTest);
         System.err.println("o = " + o);
     }
+
 }

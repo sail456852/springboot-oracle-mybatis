@@ -31,6 +31,7 @@ public class JavaConfig {
         return template;
     }
 
+    @SuppressWarnings("deprecation")
     @Bean
     public JedisConnectionFactory jedisConnectionFactory() {
         JedisConnectionFactory jedisConFactory
