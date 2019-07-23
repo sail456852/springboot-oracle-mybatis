@@ -7,10 +7,7 @@ import java.net.*;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * Created by IntelliJ IDEA.<br/>
@@ -20,6 +17,8 @@ import java.util.concurrent.TimeUnit;
  * To change this template use File | Settings | File Templates.
  */
 public class DownloadUtil {
+    static BlockingQueue<Runnable> runnables = new ArrayBlockingQueue<Runnable>(1024);
+    static ThreadPoolExecutor executor = new ThreadPoolExecutor(8, 16, 60, TimeUnit.SECONDS, runnables);
 
     public static void main(String[] args) throws IOException, URISyntaxException {
         long start = System.currentTimeMillis();
@@ -33,12 +32,10 @@ public class DownloadUtil {
 
     public static URLConnection addFileResumeFunctionality(String downloadUrl, File outputFile) throws IOException, URISyntaxException, ProtocolException, ProtocolException {
         long existingFileSize = 0L;
-        URLConnection downloadFileConnection = new URI(downloadUrl).toURL()
-                .openConnection();
+        URLConnection downloadFileConnection = new URI(downloadUrl).toURL().openConnection();
 
         if (outputFile.exists() && downloadFileConnection instanceof HttpURLConnection) {
             HttpURLConnection httpFileConnection = (HttpURLConnection) downloadFileConnection;
-
             HttpURLConnection tmpFileConn = (HttpURLConnection) downloadFileConnection;
             tmpFileConn.setRequestMethod("HEAD");
             long fileLength = tmpFileConn.getContentLengthLong();
@@ -70,21 +67,25 @@ public class DownloadUtil {
      *
      * @param fileName
      * @param url
-     * @throws IOException
      * @return
+     * @throws IOException
      */
     public static boolean nioDownloaderResumable(String fileName, String url) throws IOException, URISyntaxException {
-        File outputFile = new File(fileName);
-        URLConnection downloadFileConnection = DownloadUtil.addFileResumeFunctionality(url, outputFile);
-        try (ReadableByteChannel readableByteChannel = Channels.newChannel(downloadFileConnection.getInputStream());
-             FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
-             FileChannel fileChannel = fileOutputStream.getChannel()) {
-            fileChannel.transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
-            fileOutputStream.close();
-            return true;
-        }catch (Exception e){
-            return false;
-        }
+        Future<Boolean> future = executor.submit(() -> {
+            File outputFile = new File(fileName);
+            URLConnection downloadFileConnection = DownloadUtil.addFileResumeFunctionality(url, outputFile);
+            try (ReadableByteChannel readableByteChannel = Channels.newChannel(downloadFileConnection.getInputStream());
+                 FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
+                 FileChannel fileChannel = fileOutputStream.getChannel()) {
+                 fileChannel.transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
+                 fileOutputStream.close();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+        // future.isDone()
+        return true;
     }
 
     public static void singleThreadIODownloader(String fileName, String url) {
@@ -140,11 +141,9 @@ public class DownloadUtil {
      * @throws MalformedURLException
      */
     public void runIt() throws MalformedURLException {
-        BlockingQueue<Runnable> runnables = new ArrayBlockingQueue<Runnable>(1024);
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(8, 16, 60, TimeUnit.SECONDS, runnables);
         executor.submit(new Downloader(new URL("http://www.baidu.com")));
         executor.submit(new Downloader(new URL("http://www.douban.com")));
-        executor.shutdown();
+//        executor.shutdown();
     }
 
 }

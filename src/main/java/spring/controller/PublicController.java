@@ -2,8 +2,8 @@ package spring.controller;
 
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import spring.response.CommonCode;
 import spring.response.ResponseResult;
@@ -25,13 +25,27 @@ import java.net.URISyntaxException;
 @Controller
 public class PublicController {
 
+    /**
+     * @param request
+     * @param response
+     * @param url http://wangyuzhen.club:8080/offlineDownload/http://wangyuzhen.club/downloadTest.zip
+     * @return
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     @ResponseBody
-    @RequestMapping("/offlineDowload/{url}")
+    @RequestMapping(value = "/offlineDownload")
     public ResponseResult offlineDownload(HttpServletRequest request,
-                                          HttpServletResponse response, @PathVariable String url ) throws IOException, URISyntaxException {
+                                          HttpServletResponse response, @RequestParam String url ) throws IOException, URISyntaxException {
 //        String dataDirectory = request.getServletContext().getRealPath("/WEB-INF/downloads/pdf/"); // web app directory
+        String osName = System.getProperty("os.name");
+        System.err.println("url = " + url);
         String fileName = FilenameUtils.getName(url);
         String storeFileName = "/tmp/" + fileName;
+        if (osName.contains("Windows")) {
+            storeFileName = "D:\\" + fileName;
+        }
+        System.err.println("storeFileName = " + storeFileName);
         boolean b = DownloadUtil.nioDownloaderResumable(storeFileName, url);
         return  b ? new ResponseResult(CommonCode.SUCCESS) : new ResponseResult(CommonCode.FAIL);
     }
