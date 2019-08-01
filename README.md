@@ -36,6 +36,12 @@ spring.datasource.url=jdbc:fakeSchema://fakeurl:3306/fakeDatabase
 spring.datasource.username=root
 spring.datasource.password=FakePassword
 ~~~
+#Mybatis print sql with parameters
+1. replace BaseJdbcLogger.java in mybatis.jar with main/java/same_path_to_base_jdbc_logger
+rewrite debug function with the demo ( for case you can't download maven jar (offline))
+2. log4jdbc maven method (online)
+3. springboot, with mybatis-plus method (online)
+4. rewrite mybatis interceptor method (offline)
 
 #BUG list 
 1.xml if test bug
@@ -54,3 +60,4 @@ spring.datasource.password=FakePassword
 
 ## to server static content you need to have resources/public 
 classpath means resources fold path don't put public along with main folder
+
