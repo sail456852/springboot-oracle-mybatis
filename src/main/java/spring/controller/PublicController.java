@@ -26,6 +26,7 @@ import java.net.URISyntaxException;
 public class PublicController {
 
     /**
+     * use post to download something, multi-threading downloading
      * @param request
      * @param response
      * @param url http://wangyuzhen.club:8080/offlineDownload/http://wangyuzhen.club/downloadTest.zip

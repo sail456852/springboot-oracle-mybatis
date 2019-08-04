@@ -37,7 +37,8 @@ public class JavaConfig {
         JedisConnectionFactory jedisConFactory
                 = new JedisConnectionFactory();
         jedisConFactory.setHostName("localhost");
-        jedisConFactory.setPassword("aaa");
+//        for no auth case
+//        jedisConFactory.setPassword("aaa");
         return jedisConFactory;
     }
 

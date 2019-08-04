@@ -90,11 +90,6 @@
             <version>${springboot.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>${springboot.version}</version>
-        </dependency>
 
         <!-- Use MySQL Connector-J -->
 
@@ -116,7 +111,18 @@
             <version>2.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
     </dependencies>
+
+<!--    copied from spring-boot-offical demo, IDEA found error-->
+<!--    <properties>-->
+<!--        <java.version>1.8</java.version>-->
+<!--    </properties>-->
 
     <build>
         <plugins>
@@ -126,6 +132,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
