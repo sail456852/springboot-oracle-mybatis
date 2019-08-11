@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec0fb3d-bc56-4cac-b0eb-8abb12652693" name="forCloud" comment="springboot-official upload demo included">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/FileSystemStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageFileNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/ChromeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/ChromiumDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java" afterDir="false" />
     </list>
     <list id="069e6735-e1d0-42f9-9193-8dc4aaea1cda" name="Default Changelist" comment="finished" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,103 +51,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/FileUploadController.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ResumableDownload.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/DownloadUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1498">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/PeopleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/ChromiumDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spring/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="443">
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,6 +101,7 @@
       <find>newKe</find>
       <find>newK</find>
       <find>Integer canno</find>
+      <find>process</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,11 +148,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/spring/controller/FileUploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/MathUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webdriver/ChromeTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/webdriver/ChromiumDemo.java" />
       </list>
     </option>
   </component>
@@ -293,10 +208,10 @@
     </treeState>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="width" value="1936" />
-    <option name="height" value="2130" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1529" />
+    <option name="width" value="1550" />
+    <option name="height" value="1705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -308,7 +223,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,51 +254,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="webdriver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-oracle-mybatis" type="b2602c69:ProjectViewProjectNode" />
@@ -446,6 +316,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,7 +333,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-upload-demo/gs-uploading-files/complete/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -572,7 +444,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.ChromiumDemo.testGoogleSearch">
     <configuration name="DownloadUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.DownloadUtil" />
       <module name="spring-oracle-mybatis" />
@@ -586,43 +458,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinuxUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.LinuxUtil" />
+    <configuration name="ChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-oracle-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="webdriver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ChromeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumableDownload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.ResumableDownload" />
+    <configuration name="ChromeTest.testGoogleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-oracle-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="webdriver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ChromeTest" />
+      <option name="METHOD_NAME" value="testGoogleSearch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubanServiceImplTest.getNextUrlKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChromiumDemo.testGoogleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-oracle-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring.service.*" />
+          <option name="PATTERN" value="webdriver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="spring.service" />
-      <option name="MAIN_CLASS_NAME" value="spring.service.DoubanServiceImplTest" />
-      <option name="METHOD_NAME" value="getNextUrlKey" />
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ChromiumDemo" />
+      <option name="METHOD_NAME" value="testGoogleSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -642,21 +519,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LinuxUtil" />
       <item itemvalue="Application.DownloadUtil" />
-      <item itemvalue="Application.ResumableDownload" />
-      <item itemvalue="JUnit.DoubanServiceImplTest.getNextUrlKey" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.ChromiumDemo.testGoogleSearch" />
+      <item itemvalue="JUnit.ChromeTest.testGoogleSearch" />
+      <item itemvalue="JUnit.ChromeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChromiumDemo.testGoogleSearch" />
+        <item itemvalue="JUnit.ChromeTest" />
+        <item itemvalue="JUnit.ChromeTest.testGoogleSearch" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.DownloadUtil" />
-        <item itemvalue="Application.ResumableDownload" />
-        <item itemvalue="Application.LinuxUtil" />
-        <item itemvalue="JUnit.DoubanServiceImplTest.getNextUrlKey" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -690,7 +570,14 @@
       <workItem from="1564734317745" duration="1583000" />
       <workItem from="1564736405180" duration="1052000" />
       <workItem from="1564823393546" duration="2523000" />
-      <workItem from="1564878146719" duration="2398000" />
+      <workItem from="1564878146719" duration="3742000" />
+      <workItem from="1565057666118" duration="3937000" />
+      <workItem from="1565093413871" duration="1525000" />
+      <workItem from="1565143302489" duration="737000" />
+      <workItem from="1565225628950" duration="1567000" />
+      <workItem from="1565227325881" duration="4835000" />
+      <workItem from="1565443215223" duration="672000" />
+      <workItem from="1565509204959" duration="8055000" />
     </task>
     <task id="LOCAL-00001" summary="redis added">
       <created>1560940705357</created>
@@ -748,49 +635,56 @@
       <option name="project" value="LOCAL" />
       <updated>1564625355796</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="springboot-official upload demo included">
+      <created>1564881168026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564881168026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisRepoTest_save - 2019.06.28 at 17h 27m 51s.xml">
-      <configuration name="RedisRepoTest.save" configurationId="JUnit" />
+    <history-entry file="ChromeTest - 2019.08.11 at 16h 16m 38s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisRepoTest_save_(1) - 2019.06.28 at 17h 28m 39s.xml">
-      <configuration name="RedisRepoTest.save (1)" configurationId="JUnit" />
+    <history-entry file="ChromeTest - 2019.08.11 at 16h 18m 25s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisRepoTest_save_(2) - 2019.06.28 at 17h 29m 55s.xml">
-      <configuration name="RedisRepoTest.save (2)" configurationId="JUnit" />
+    <history-entry file="ChromeTest - 2019.08.11 at 16h 19m 26s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisRepoTest_redisTemplateSet - 2019.06.29 at 16h 31m 28s.xml">
-      <configuration name="RedisRepoTest.redisTemplateSet" configurationId="JUnit" />
+    <history-entry file="ChromeTest - 2019.08.11 at 16h 21m 39s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 15h 35m 03s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromeTest - 2019.08.11 at 16h 33m 40s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 15h 43m 44s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromiumDemo_testGoogleSearch - 2019.08.11 at 17h 45m 26s.xml">
+      <configuration name="ChromiumDemo.testGoogleSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 15h 47m 23s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromiumDemo_testGoogleSearch - 2019.08.11 at 17h 48m 20s.xml">
+      <configuration name="ChromiumDemo.testGoogleSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 15h 48m 08s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromiumDemo_testGoogleSearch - 2019.08.11 at 17h 49m 25s.xml">
+      <configuration name="ChromiumDemo.testGoogleSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 16h 05m 38s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromiumDemo_testGoogleSearch - 2019.08.11 at 17h 52m 29s.xml">
+      <configuration name="ChromiumDemo.testGoogleSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubanServiceImplTest_getNextUrlKey - 2019.07.04 at 16h 06m 19s.xml">
-      <configuration name="DoubanServiceImplTest.getNextUrlKey" configurationId="JUnit" />
+    <history-entry file="ChromiumDemo_testGoogleSearch - 2019.08.11 at 17h 52m 30s.xml">
+      <configuration name="ChromiumDemo.testGoogleSearch" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152972000" />
+    <option name="totallyTimeSpent" value="175644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="3858" height="2140" extended-state="6" />
+    <frame x="1529" y="0" width="1550" height="1705" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12843552" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2740094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -799,27 +693,30 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="8" side_tool="true" />
+      <window_info id="Learn" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49656448" weight="0.32218844" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49630022" visible="true" weight="0.45896655" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936199" weight="0.32124683" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49563465" visible="true" weight="0.4586514" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4968017" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49496305" weight="0.3288804" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5036998" side_tool="true" visible="true" weight="0.45896655" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49947146" weight="0.3277609" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5043653" side_tool="true" visible="true" weight="0.4586514" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49764943" weight="0.32760814" />
       <window_info anchor="bottom" id="Database Console" order="17" sideWeight="0.49946696" weight="0.3290461" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32978722" />
       <window_info anchor="bottom" id="Problems" order="19" />
       <window_info anchor="bottom" id="MyBatis Log" order="20" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="21" />
+      <window_info anchor="bottom" id="Tail" order="22" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -835,6 +732,7 @@
       <window_info anchor="right" id="Redis Servers" order="12" visible="true" weight="0.061744966" />
       <window_info anchor="right" id="Json Parser" order="13" />
       <window_info anchor="right" id="JSON Viewer" order="14" />
+      <window_info anchor="right" id="Key Promoter X" order="15" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,55 +772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/nio/ch/ServerSocketChannelImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="446" column="27" selection-start-line="446" selection-start-column="27" selection-end-line="446" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="381" selection-start-line="381" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="435" selection-start-line="435" selection-end-line="435" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring.mapper/PeopleMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1108,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/StorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/StorageFileNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1126,13 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/FileSystemStorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1156,29 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/uploadForm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1186,26 +998,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/PeopleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
+        <state relative-caret-position="1080">
           <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1215,7 +1010,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/ResumableDownload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
+        <state relative-caret-position="480">
           <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1223,30 +1018,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/DownloadUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1498">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="640">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/DownloadUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/PeopleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.10.RELEASE/spring-core-5.0.10.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="634" column="25" selection-start-line="634" selection-start-column="25" selection-end-line="634" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/nio/file/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="457" column="9" selection-start-line="457" selection-start-column="9" selection-end-line="457" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/FileSystemStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/StorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/MathUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/storage/StorageProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="120">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13-sources.jar!/org/aspectj/lang/annotation/After.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.9.1/selenium-remote-driver-3.9.1.jar!/org/openqa/selenium/remote/DesiredCapabilities.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/ChromeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+        <state relative-caret-position="480">
+          <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webdriver/ChromiumDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
