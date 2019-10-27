@@ -1,3 +1,413 @@
+POST http://localhost:8080/instantSearch?inputedText=go
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T075024.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=M
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T075017.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=I
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T075013.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=H
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T075005.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=He
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T075002.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=in
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074955.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=mo
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074950.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=D
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074938.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=DT
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074935.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=AT
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074929.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=A
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074828.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=L
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074823.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074817.200.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter?inputedText=Lemon
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074813.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074755.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=L
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074744.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=A
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074740.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=url
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074735.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=url
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074730.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=d
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074723.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=d
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074721.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=d
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074511.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=Ly
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074505.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=x
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074457.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=ly
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074455.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=ly
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074454.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=ly
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074441.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T074428.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072319.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072317.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072233.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072222.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072217.200.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter?inputedText=urlAddTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072214.200.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter?inputedText=urlAddTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072213.200.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter?inputedText=urlAddTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072211.200.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter?inputedText=urlAddTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072208.200.json
+
+###
+
+POST http://localhost:8080/instantSearch?inputedText=urlTest
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072107.200.json
+
+###
+
+POST http://localhost:8080/instantSearch
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T072028.400.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter
+Content-Type: application/json
+{:
+    "inputedText": "testFruit"
+}:
+
+<> 2019-10-27T071842.400.json
+
+###
+
+POST http://localhost:8080/addInstantSearchEnter
+Content-Type: application/json
+{:
+    "inputedText": "testFruit",
+}:
+
+<> 2019-10-27T071827.400.json
+
+###
+
 GET http://localhost:8080/actuator/health
 Accept: application/vnd.spring-boot.actuator.v2+json
 
@@ -42,46 +452,6 @@ GET http://localhost:8080/test
 ###
 
 GET http://localhost:8080/list
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/listAll
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/test
-
-###
-
-GET http://localhost:8080/spring-oracle-mybatis/test
 
 ###
 
