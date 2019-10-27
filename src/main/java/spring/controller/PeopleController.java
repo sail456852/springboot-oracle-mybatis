@@ -34,6 +34,10 @@ public class PeopleController {
         return list;
     }
 
+    /**
+     * http://localhost:8080/test
+     * @return
+     */
     @ResponseBody
     @RequestMapping("/test")
     public String testAPI() {

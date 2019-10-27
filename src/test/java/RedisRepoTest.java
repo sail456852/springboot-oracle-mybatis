@@ -2,13 +2,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spring.config.JavaConfig;
 import spring.dao.CommentRedisRepository;
+import spring.dao.FruitRedisRepository;
 import spring.dao.StudentRedisRepository;
 import spring.dto.Comment;
+import spring.dto.Fruit;
 import spring.dto.Student;
 
 import java.util.ArrayList;
@@ -35,17 +36,30 @@ public class RedisRepoTest {
     @Autowired
     private CommentRedisRepository commentRedisRepository;
 
+    @Autowired
+    private FruitRedisRepository fruitRedisRepository;
+
+    @Test
+    public void saveFruits() {
+        fruitRedisRepository.save(new Fruit("Pomelo"));
+        fruitRedisRepository.save(new Fruit("Jackfruit"));
+        fruitRedisRepository.save(new Fruit("Rambutan"));
+        fruitRedisRepository.save(new Fruit("Mangosteen"));
+        fruitRedisRepository.save(new Fruit("Lychee"));
+        fruitRedisRepository.findAll().forEach(System.out::println);
+    }
+
     @Test
     public void save() {
 //        Student student = new Student(
 //                "Eng2015001", "John Doe", Student.Gender.MALE, 1);
 //        studentRepository.save(student);
-        Comment comment = new Comment("testUrl", new ArrayList<String>(){{
+        Comment comment = new Comment("testUrl", new ArrayList<String>() {{
             add("testComment1");
             add("testComment2");
         }});
 
-        Comment comment2 = new Comment("testUrl2", new ArrayList<String>(){{
+        Comment comment2 = new Comment("testUrl2", new ArrayList<String>() {{
             add("testComment3");
             add("testComment4");
         }});
@@ -73,7 +87,6 @@ public class RedisRepoTest {
         Student retrievedStudent =
                 studentRepository.findById("Eng2015001").get();
         System.err.println("retrievedStudent = " + retrievedStudent);
-
         retrievedStudent.setName("Richard Watson");
 //        studentRepository.save(student);
 //        studentRepository.deleteById(student.getId())
@@ -107,7 +120,6 @@ public class RedisRepoTest {
      */
     @Test
     public void redisTemplateSet() {
-
         String yuzhenTest = "yuzhenTest";
         redisTemplate.opsForValue().set(yuzhenTest, "newValue");
         Object o = redisTemplate.opsForValue().get(yuzhenTest);

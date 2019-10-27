@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta charset="UTF-8" content="text/html"/>
+    <script src="js/jquery.min.js"></script>
+    <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>-->
+    <!--    <script src="http://malsup.github.com/jquery.form.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("#inputUrl").keydown(function (e) {
+                    console.log("key up detected");
+                    if (e.keyCode === 13) {
+                        console.log("enter key detected");
+                        $.ajax({
+                            type: "POST",
+                            url: "/addInstantSearchEnter",
+                            data: {
+                                url: $("#inputUrl").val(),
+                            },
+                            success: function (result) {
+                                console.log(result.message)
+                            },
+                            error: function (result) {
+                                console.log(result.message);
+                            }
+                        });
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "/instantSearch",
+                        data: {
+                            url: $("#inputUrl").val(),
+                        },
+                        success: function (result) {
+                            console.log("success");
+                            $("#showUrl").empty();
+                            $("#showUrl").append("<div> " + result + " </div>");
+                        },
+                        error: function (result) {
+                            console.log("error");
+                            $("#showUrl").append("<div>" + result + "</div>");
+                        }
+                    });
+                }
+            );
+        });
+    </script>
+    <style>
+        h1 {
+            color: aquamarine;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            color: red;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            color: yellowgreen;
+        }
+
+        span {
+            color: red;
+        }
+
+        button {
+            alignment: center;
+            text-align: center;
+            color: green;
+        }
+
+        #showUrl {
+            border: dot-dash black;
+            width: 70%;
+            height: 200px;
+            padding-left: 30%;
+            float: bottom;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Type to instantly search the server</h1>
+
+
+<input id="inputUrl" type="text" name="url" value="Type to search instantly"/>
+
+
+<div id="showUrl" draggable="true"></div>
+
+</body>

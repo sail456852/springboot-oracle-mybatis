@@ -5,11 +5,18 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import spring.dao.CommentRedisRepository;
+import spring.dao.FruitRedisRepository;
 import spring.dto.Comment;
+import spring.dto.Fruit;
+import spring.response.CommonCode;
 import spring.response.DoubanCode;
 
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Created by IntelliJ IDEA.<br/>
@@ -23,6 +30,9 @@ public class DoubanServiceImpl implements DoubanService {
 
     @Autowired
     private CommentRedisRepository commentRedisRepository;
+
+    @Autowired
+    private FruitRedisRepository fruitRedisRepository;
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -104,6 +114,35 @@ public class DoubanServiceImpl implements DoubanService {
         List<String> urls = redisTemplate.opsForValue().multiGet(keys);
         return urls;
     }
+
+    @Override
+    public CommonCode addInstantSearchEnter(String inputedText) {
+        Iterable<Fruit> all = fruitRedisRepository.findAll();
+        // No null checking in this format
+        for (Fruit o : all) {
+            if(o.getName().equals(inputedText)) {
+                return CommonCode.DUPLICATED_ITEM;
+            }
+        }
+        fruitRedisRepository.save(new Fruit(inputedText));
+        return CommonCode.SUCCESS;
+    }
+
+    @Override
+    public List<String> instantSearch(String inputedText) {
+        Iterable<Fruit> all = fruitRedisRepository.findAll(); // apply regex to stream
+        Stream<Fruit> fruitStream = StreamSupport.stream(all.spliterator(), false);
+        // Compile regex as predicate
+        Predicate<String> inputMatcher = Pattern
+                .compile(inputedText + "*")
+                .asPredicate();
+        // Apply predicate filter
+        List<String> desiredMatcher = fruitStream.map(v -> v.getName()).filter(inputMatcher).collect(Collectors.<String>toList());
+
+        desiredMatcher.forEach(System.out::println);
+        return desiredMatcher;
+    }
+
 
     public boolean findDuplicateUrl(String url) {
         Set<String> keys = redisTemplate.keys("d*");

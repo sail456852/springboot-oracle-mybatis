@@ -1,3 +1,10 @@
+GET http://localhost:8080/actuator/health
+Accept: application/vnd.spring-boot.actuator.v2+json
+
+<> 2019-10-27T015446.200.json
+
+###
+
 POST http://localhost:8080/addUrl
 Content-Type: application/json
 

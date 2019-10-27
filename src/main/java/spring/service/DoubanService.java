@@ -1,6 +1,7 @@
 package spring.service;
 
 import spring.dto.Comment;
+import spring.response.CommonCode;
 import spring.response.DoubanCode;
 
 import java.util.List;
@@ -27,4 +28,8 @@ public interface DoubanService {
     DoubanCode removeUrlOld(String url);
 
     List<String> getAllOld();
+
+    CommonCode addInstantSearchEnter(String inputedText);
+
+    List<String> instantSearch(String inputedText);
 }

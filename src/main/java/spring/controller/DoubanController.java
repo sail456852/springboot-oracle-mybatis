@@ -3,18 +3,17 @@ package spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import spring.dto.Comment;
-import spring.response.*;
+import spring.response.DoubanCode;
+import spring.response.QueryResponseResult;
+import spring.response.QueryResult;
+import spring.response.ResponseResult;
 import spring.service.DoubanService;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by IntelliJ IDEA.<br/>
@@ -98,7 +97,7 @@ public class DoubanController {
     }
 
     /**
-     * http://localhost:8080/cleanUp
+     * http://localhost:8080/removeAll
      * @return
      */
     @ResponseBody
