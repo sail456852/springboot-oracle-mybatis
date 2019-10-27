@@ -49,6 +49,23 @@
                     }
                 })
             });
+
+            $('#downloadButton').click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/offlineDownload",
+                    data: {
+                        url: $("#downloadBox").val()
+                    },
+                    success: function (result) {
+                        console.log("success");
+                    },
+                    error: function (result) {
+                        console.log("error");
+                    }
+                })
+            });
+
             $("#getAll").click(function (e) {
                 e.preventDefault();
                 $("#showUrl").empty();
@@ -157,7 +174,7 @@
 <!--    <input id="submitButton" type="submit" value="提交"/>-->
 <!--</form>-->
 
-<input id="inputUrl" type="text" name="url" value="change me"/>
+<input id="inputUrl" type="text" name="url"/>
 
 <div>
     <button id="getAll" name="getAll">查询在顶贴的所有帖子</button>
@@ -168,5 +185,11 @@
 
 
 <div id="showUrl" draggable="true"></div>
+
+
+<input id="downloadBox" type="text" name="downloadUrl" value="https://ftp.gnu.org/gnu/octave/octave-2.0-2.0.1.patch.gz"/>
+<div>
+    <button id="downloadButton" name="dbb">代理下载</button>
+</div>
 
 </body>

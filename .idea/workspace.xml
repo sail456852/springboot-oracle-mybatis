@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec0fb3d-bc56-4cac-b0eb-8abb12652693" name="forCloud" comment="failed to access localhost request mapping on local machine">
+    <list default="true" id="fec0fb3d-bc56-4cac-b0eb-8abb12652693" name="forCloud" comment="fix URL not found problem, fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/JavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/DoubanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/DoubanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
     </list>
     <list id="069e6735-e1d0-42f9-9193-8dc4aaea1cda" name="Default Changelist" comment="finished" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,10 +52,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/it.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="370">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/test/java/spring/service/DoubanServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/dto/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/response/DoubanCode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/utils/LinuxUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ResumableDownload.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6ea6bf71-5e5a-46ca-b80f-d37092c65e52/console.sql" />
@@ -161,6 +156,7 @@
         <option value="$PROJECT_DIR$/src/main/java/spring/service/DoubanServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http" />
         <option value="$PROJECT_DIR$/src/main/resources/public/it.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
       </list>
     </option>
   </component>
@@ -1423,7 +1419,7 @@
       <workItem from="1572147149536" duration="10001000" />
       <workItem from="1572157959143" duration="3277000" />
       <workItem from="1572164246061" duration="182000" />
-      <workItem from="1572165320181" duration="10315000" />
+      <workItem from="1572165320181" duration="13107000" />
     </task>
     <task id="LOCAL-00001" summary="redis added">
       <created>1560940705357</created>
@@ -1502,7 +1498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572158401370</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix URL not found problem, fixed">
+      <created>1572179607559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572179607560</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix URL not found problem, fixed">
+      <created>1572180644481</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572180644481</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1538,7 +1548,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210144000" />
+    <option name="totallyTimeSpent" value="212936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1618,7 +1628,8 @@
     <MESSAGE value="springboot-official upload demo included" />
     <MESSAGE value="selenium added" />
     <MESSAGE value="failed to access localhost request mapping on local machine" />
-    <option name="LAST_COMMIT_MESSAGE" value="failed to access localhost request mapping on local machine" />
+    <MESSAGE value="fix URL not found problem, fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix URL not found problem, fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1752,16 +1763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1944,14 +1945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/PeopleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -2035,16 +2028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/httpTester.http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -2054,8 +2037,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/it.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/controller/PublicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
