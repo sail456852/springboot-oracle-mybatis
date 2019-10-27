@@ -8,20 +8,19 @@
     <script>
         $(document).ready(function () {
             $("#inputUrl").keydown(function (e) {
-                    console.log("key up detected");
                     if (e.keyCode === 13) {
                         console.log("enter key detected");
                         $.ajax({
                             type: "POST",
                             url: "/addInstantSearchEnter",
                             data: {
-                                url: $("#inputUrl").val(),
+                                inputedText: $("#inputUrl").val()
                             },
                             success: function (result) {
                                 console.log(result.message)
                             },
                             error: function (result) {
-                                console.log(result.message);
+                                console.log(result.message)
                             }
                         });
                     }
@@ -29,16 +28,20 @@
                         type: "POST",
                         url: "/instantSearch",
                         data: {
-                            url: $("#inputUrl").val(),
+                            inputedText: $("#inputUrl").val(),
                         },
                         success: function (result) {
-                            console.log("success");
                             $("#showUrl").empty();
-                            $("#showUrl").append("<div> " + result + " </div>");
+                            $.each(result, function (index, value) {
+                                $("#showUrl").append(
+                                      "<p>" + value + "</p>"
+                                );
+                            });
+
                         },
                         error: function (result) {
-                            console.log("error");
-                            $("#showUrl").append("<div>" + result + "</div>");
+                            $("#showUrl").empty();
+                            $("#showUrl").append("hello error" );
                         }
                     });
                 }
@@ -74,19 +77,19 @@
 
         #showUrl {
             border: dot-dash black;
-            width: 70%;
-            height: 200px;
-            padding-left: 30%;
+            /*width: 70%;*/
+            /*height: 200px;*/
+            padding-left: 0%;
             float: bottom;
         }
 
     </style>
 </head>
 <body>
-<h1>Type to instantly search the server</h1>
+<h1>Search the fruits</h1>
 
 
-<input id="inputUrl" type="text" name="url" value="Type to search instantly"/>
+<input id="inputUrl" type="text" name="url"/>
 
 
 <div id="showUrl" draggable="true"></div>

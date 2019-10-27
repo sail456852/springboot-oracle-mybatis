@@ -17,7 +17,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  * To change this template use File | Settings | File Templates.
  */
 @Configuration
-@ComponentScan("spring")
+@ComponentScan("spring") // 扫描所有
 @EnableRedisRepositories(basePackages = "spring.dao")
 @PropertySource("classpath:application.properties")
 public class JavaConfig {

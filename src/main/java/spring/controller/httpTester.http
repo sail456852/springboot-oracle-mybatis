@@ -29,3 +29,19 @@ Content-Type: application/x-www-form-urlencoded
 id=99&content=new-element
 
 ###
+POST  http://localhost:8080/addInstantSearchEnter?inputedText=Lemon
+Content-Type: application/json
+{
+    "inputedText": "testFruit"
+}
+
+###
+
+###
+POST  http://localhost:8080/instantSearch?inputedText=go
+Content-Type: application/json
+{
+    "inputedText": "testFruit"
+}
+
+###

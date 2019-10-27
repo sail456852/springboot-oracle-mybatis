@@ -60,6 +60,12 @@ public class PublicController {
     @Autowired
     private DoubanService doubanService;
 
+    /**
+     * @param inputedText
+     * @return
+     * //
+     * http://localhost:8080/addInstantSearchEnter
+     */
     @ResponseBody
     @RequestMapping(value = "/addInstantSearchEnter")
     public ResponseResult instantSearchEnter(@RequestParam String inputedText) {

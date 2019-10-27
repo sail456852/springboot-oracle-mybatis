@@ -134,7 +134,7 @@ public class DoubanServiceImpl implements DoubanService {
         Stream<Fruit> fruitStream = StreamSupport.stream(all.spliterator(), false);
         // Compile regex as predicate
         Predicate<String> inputMatcher = Pattern
-                .compile(inputedText + "*")
+                .compile(inputedText)
                 .asPredicate();
         // Apply predicate filter
         List<String> desiredMatcher = fruitStream.map(v -> v.getName()).filter(inputMatcher).collect(Collectors.<String>toList());

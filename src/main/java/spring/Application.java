@@ -2,10 +2,7 @@ package spring;
 
 import org.springframework.beans.BeansException;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -17,10 +14,12 @@ import spring.service.storage.StorageProperties;
  //@SpringBootApplication
  @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
  */
-//@SpringBootApplication
+//@MapperScan("spring.dao")
+//@SpringBootApplication( scanBasePackages = "spring") // scanned in JavaConfig.java
+@SpringBootApplication()
 @EnableConfigurationProperties(StorageProperties.class)
-// uncomment this to exclude JDBC part
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+// uncomment this to exclude JDBC part, use the following, @Requestmapping won't work  /test will fail
+//@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class Application implements ApplicationContextAware {
 
     private static ApplicationContext applicationContext;
