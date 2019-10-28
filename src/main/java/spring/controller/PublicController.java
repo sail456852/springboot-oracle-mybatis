@@ -47,7 +47,7 @@ public class PublicController {
         String osName = System.getProperty("os.name");
         System.err.println("url = " + url);
         String fileName = FilenameUtils.getName(url);
-        String storeFileName = "/tmp/" + fileName;
+        String storeFileName = "/path/to/root/" + fileName; // meet the needs of web
         if (osName.contains("Windows")) {
             storeFileName = "D:\\" + fileName;
         }
