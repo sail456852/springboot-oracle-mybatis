@@ -1,9 +1,12 @@
+<!--* http://localhost:8080/ -->
 <html>
 <head>
     <meta charset="UTF-8" content="text/html"/>
     <script src="js/jquery.min.js"></script>
-<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>-->
-<!--    <script src="http://malsup.github.com/jquery.form.js"></script>-->
+    <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>-->
+    <!--    <script src="http://malsup.github.com/jquery.form.js"></script>-->
+    <script src="js/pace.min.js"></script>
+    <link href="css/pace-theme-barber-shop.css" rel="stylesheet" />
 
     <script>
         // wait for the DOM to be loaded
@@ -24,11 +27,11 @@
                     success: function (result) {
                         console.log("success");
                         $("#showUrl").empty();
-                        $("#showUrl").append("<div>addUrl " + result.message +  "</div>");
+                        $("#showUrl").append("<div>addUrl " + result.message + "</div>");
                     },
                     error: function (result) {
                         console.log("error");
-                        $("#showUrl").append("<div>addUrl " + result.message +  "</div>");
+                        $("#showUrl").append("<div>addUrl " + result.message + "</div>");
                     }
                 })
             });
@@ -41,7 +44,8 @@
                     success: function (result) {
                         console.log("success");
                         $("#showUrl").empty();
-                        $("#showUrl").append("<div>防止误删,这个功能没有开放,请一个一个删除</div>");a
+                        $("#showUrl").append("<div>防止误删,这个功能没有开放,请一个一个删除</div>");
+                        a
                     },
                     error: function (result) {
                         console.log("error");
@@ -81,9 +85,9 @@
                         console.log(result);
                         var list = result.queryResult.list;
                         $("#showUrl").empty();
-                        $.each(list, function(i, val){
-                            $("#showUrl").append("<a target='_blank' href='" + val + "'>" + val + "</a> <br> " );
-                                // + "<span>" + val + "</span>" + "<button id='setInput' onclick=''>点击复制这个URL到输入框</button>" +  "<br>");
+                        $.each(list, function (i, val) {
+                            $("#showUrl").append("<a target='_blank' href='" + val + "'>" + val + "</a> <br> ");
+                            // + "<span>" + val + "</span>" + "<button id='setInput' onclick=''>点击复制这个URL到输入框</button>" +  "<br>");
                         });
                     },
                     error: function (result) {
@@ -108,7 +112,7 @@
                     },
                     error: function (result) {
                         console.log("error");
-                        $("#showUrl").append("<div>removeUrl " + result.message +  "</div>");
+                        $("#showUrl").append("<div>removeUrl " + result.message + "</div>");
                     }
                 });
             });
@@ -142,6 +146,7 @@
             text-align: center;
             color: green;
         }
+
         #showUrl {
             border: dot-dash black;
             width: 70%;
@@ -149,24 +154,28 @@
             padding-left: 30%;
             float: bottom;
         }
-        #removeAll{
+
+        #removeAll {
             width: 10%;
-            float:bottom;
+            float: bottom;
             color: red;
         }
-        #getAll{
+
+        #getAll {
             color: green;
         }
-        #addUrl{
+
+        #addUrl {
             color: blue;
         }
-        #removeUrl{
+
+        #removeUrl {
             color: red;
         }
     </style>
 </head>
 <body>
-<h1>豆瓣在綫頂貼機</h1>
+<h1>豆瓣在綫頂貼機4</h1>
 
 <p>這裏填入要自動回帖的URL：例如: https://www.douban.com/group/topic/139684330/</p>
 <!--<form id="myForm" action="/addUrl" method="post">-->
@@ -187,9 +196,10 @@
 <div id="showUrl" draggable="true"></div>
 
 
-<input id="downloadBox" type="text" name="downloadUrl" value="https://ftp.gnu.org/gnu/octave/octave-2.0-2.0.1.patch.gz"/>
+<input id="downloadBox" type="text" name="downloadUrl"
+       value="https://ftp.gnu.org/gnu/octave/octave-2.0-2.0.1.patch.gz"/>
 <div>
-    <button id="downloadButton" name="dbb">代理下载</button>
+    <button id="downloadButton" name="dbb">代理下载2</button>
 </div>
 
 </body>
