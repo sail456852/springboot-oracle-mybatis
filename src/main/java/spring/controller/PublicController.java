@@ -38,6 +38,7 @@ public class PublicController {
      * @throws IOException
      * @throws URISyntaxException
      * @param url      http://wangyuzhen.club:8080/offlineDownload/http://wangyuzhen.club/downloadTest.zip
+     *                 download to tmp folder
      */
     @ResponseBody
     @RequestMapping(value = "/offlineDownload")
@@ -47,7 +48,7 @@ public class PublicController {
         String osName = System.getProperty("os.name");
         System.err.println("url = " + url);
         String fileName = FilenameUtils.getName(url);
-        String storeFileName = "/path/to/root/" + fileName; // meet the needs of web
+        String storeFileName = "/tmp/" + fileName; // meet the needs of web
         if (osName.contains("Windows")) {
             storeFileName = "D:\\" + fileName;
         }
