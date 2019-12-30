@@ -111,7 +111,6 @@
           <element id="library" level="project" name="Maven: junit:junit:4.12" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="spring-oracle-mybatis/web/Web" />
     </root>
   </artifact>
 </component>
